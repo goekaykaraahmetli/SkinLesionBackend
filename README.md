@@ -1,12 +1,7 @@
 # **Project Setup Guide**
 
-Welcome to the **Project Setup Guide** for running the backend server and making API calls. This guide provides clear, step-by-step instructions on how to install required modules, set up the environment, and run the backend.
-
----
-
 ## **Prerequisites**
 
-- **Operating System**: macOS (Apple Silicon - M1, M2, M3, M4, etc.)
 - **Python Version**: Python 3.10 (Required for TensorFlow compatibility on macOS Apple Silicon)
 - **Development Tools**: Terminal, Python, pip
 
@@ -21,9 +16,9 @@ To ensure compatibility with TensorFlow, you must use Python **3.10**.
 1. **Install Python 3.10** using Homebrew:
    ```bash
    brew install python@3.10
-   ````
+   ```
 
-2. **Create a virtual environment**:
+2. **Create a virtual environment** (Required only on macOS, as Python no longer allows direct package installation on macOS):
    ```bash
    python3.10 -m venv venv
    ```
@@ -167,4 +162,3 @@ __pycache__/
 .idea/
 .vscode/
 ```
-
