@@ -168,17 +168,3 @@ __pycache__/
 .vscode/
 ```
 
-This ensures that your local environment files are not pushed to GitHub.
-
----
-
-## **Contributing**
-Contributions are welcome! Feel free to fork this repository, create a branch, and submit a pull request.
-
----
-
-## **License**
-This project is licensed under the **MIT License**. You are free to use, modify, and distribute it as you like.
-
-Happy coding! 🚀
-
