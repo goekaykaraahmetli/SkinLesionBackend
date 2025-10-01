@@ -16,7 +16,7 @@ app = Flask(__name__)
 # Set device
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-# ✅ Correctly Define ResNet18 Model with MC Dropout
+# Define ResNet18 Model with MC Dropout
 def initialize_model(num_classes):
     model = models.resnet18(weights=None)  # Do not load default weights
     in_features = model.fc.in_features
@@ -26,7 +26,7 @@ def initialize_model(num_classes):
     )
     return model
 
-# ✅ Load Model with Correct Structure
+# Load Model with Correct Structure
 model = initialize_model(num_classes=7)
 checkpoint = torch.load("best_model.pth", map_location=device)  # Load saved weights
 model.load_state_dict(checkpoint)  # Load state_dict properly
